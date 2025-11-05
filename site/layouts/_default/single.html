@@ -1,6 +1,41 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
-{{ .Content }}
+<article>
+  <div class="article-meta">
+    <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+    {{ partial "post-meta.html" . }}
+  </div>
 
-{{ end }}
+  {{ if .Params.description }}
+  <div class="article-description">
+    <em>{{ .Params.description }}</em>
+  </div>
+  {{ end }}
+
+  {{ if .TableOfContents }}
+  {{ if gt (len .TableOfContents) 100 }}
+  <details class="toc">
+    <summary>Table of Contents</summary>
+    {{ .TableOfContents }}
+  </details>
+  {{ end }}
+  {{ end }}
+
+  <main>
+    {{ .Content }}
+  </main>
+
+  {{ if or .NextInSection .PrevInSection }}
+  <nav class="post-nav">
+    <hr/>
+    {{ if .PrevInSection }}
+    <span class="nav-prev">← <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></span>
+    {{ end }}
+    {{ if .NextInSection }}
+    <span class="nav-next"><a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a> →</span>
+    {{ end }}
+  </nav>
+  {{ end }}
+</article>
+
+{{ partial "footer.html" . }}

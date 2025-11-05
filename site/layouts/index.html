@@ -1,13 +1,35 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+<main>
+  <div class="home-intro">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="lead">{{ . }}</p>
+    {{ end }}
+    {{ .Content }}
+  </div>
 
-{{ partial "short-text" .Params.blurb}}
+  <h2>Recent Posts</h2>
+  <ul class="post-list">
+    {{ range first 10 (where .Site.RegularPages "Type" "post") }}
+    <li class="post-item">
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <div class="post-summary-meta">
+        <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+        {{ if .ReadingTime }}
+        <span class="reading-time">• {{ .ReadingTime }} min read</span>
+        {{ end }}
+      </div>
+      {{ if .Description }}
+      <p class="post-summary">{{ .Description }}</p>
+      {{ else if .Summary }}
+      <p class="post-summary">{{ .Summary }}</p>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
 
-{{ partial "2-up" .Params }}
+  <p><a href="{{ "post" | relURL }}">View all posts →</a></p>
+</main>
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
-
-{{ end }}
+{{ partial "footer.html" . }}

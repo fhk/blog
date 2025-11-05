@@ -1,0 +1,31 @@
+<div class="post-meta">
+  {{ if (gt .Date 0) }}
+  <span class="post-date">
+    {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
+  </span>
+  {{ end }}
+
+  {{ if .ReadingTime }}
+  <span class="reading-time">
+    • {{ .ReadingTime }} min read
+  </span>
+  {{ end }}
+
+  {{ with .Params.tags }}
+  <div class="post-tags">
+    <strong>Tags:</strong>
+    {{ range . }}
+    <a href="{{ "tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.categories }}
+  <div class="post-categories">
+    <strong>Categories:</strong>
+    {{ range . }}
+    <a href="{{ "categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

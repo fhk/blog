@@ -1,16 +1,42 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
-
-<div class="mw7 center">
-  <ul id="blog-list" class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </li>
-      {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}
+  <p>{{ . }}</p>
+  {{ end }}
 </div>
 
-{{end}}
+<main>
+  {{ .Content }}
+
+  {{ if .Pages }}
+  <ul class="post-list">
+    {{ range .Pages }}
+    <li class="post-item">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <div class="post-summary-meta">
+        <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+        {{ if .ReadingTime }}
+        <span class="reading-time">• {{ .ReadingTime }} min read</span>
+        {{ end }}
+      </div>
+      {{ if .Description }}
+      <p class="post-summary">{{ .Description }}</p>
+      {{ else if .Summary }}
+      <p class="post-summary">{{ .Summary }}</p>
+      {{ end }}
+      {{ with .Params.tags }}
+      <div class="post-list-tags">
+        {{ range first 3 . }}
+        <span class="tag">#{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</main>
+
+{{ partial "footer.html" . }}

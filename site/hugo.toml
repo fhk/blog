@@ -1,12 +1,72 @@
 baseurl = "/"
 languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
+title = "Tech Blog"
+theme = "hugo-xmin"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+# Enable RSS and taxonomies for blog
+enableRobotsTXT = true
 
+[pagination]
+  pagerSize = 10
+
+# Permalinks for clean URLs
+[permalinks]
+  post = "/blog/:year/:month/:title/"
+
+# Main navigation menu
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Blog"
+  url = "/post/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 4
+
+[[menu.main]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 5
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Params
 [params]
-images = ["img/og-image.jpg"]
+  description = "A minimalist tech blog focused on tutorials, reviews, and technical insights"
+  author = "Tech Blogger"
+  footer = "&copy; {Year} Tech Blog | Built with [Hugo](https://gohugo.io) and [Hugo XMin](https://github.com/yihui/hugo-xmin)"
+  dateFormat = "January 2, 2006"
+
+# Syntax highlighting with Chroma
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 2
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+# Minification for production
+[minify]
+  minifyOutput = true
