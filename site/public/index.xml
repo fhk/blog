@@ -1,9 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Tech Blog on Tech Blog</title><link>/</link><description>Recent content in Welcome to Tech Blog on Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo vs Other Static Site Generators: Why I Chose Hugo</title><link>/blog/2025/11/hugo-vs-other-static-site-generators-why-i-chose-hugo/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/hugo-vs-other-static-site-generators-why-i-chose-hugo/</guid><description>When building this blog, I evaluated several static site generators. Here&amp;rsquo;s why I ultimately chose Hugo.
-The Contenders I considered these popular options:
-Hugo - Go-based SSG Jekyll - Ruby-based, GitHub Pages default Next.js - React-based framework with SSG support Gatsby - React-based SSG focused on GraphQL Comparison Matrix Feature Hugo Jekyll Next.js Gatsby Build Speed ⚡ Fastest Slow Medium Slow Learning Curve Low Low Medium High Plugins Limited Many Many Many Tech Stack Go Ruby React React Bundle Size Minimal Minimal Large Large Why Hugo Won 1.</description></item><item><title>Understanding Python Decorators: A Practical Guide</title><link>/blog/2025/11/understanding-python-decorators-a-practical-guide/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/understanding-python-decorators-a-practical-guide/</guid><description>Python decorators are a powerful feature that allows you to modify or enhance functions and methods. Let&amp;rsquo;s dive into how they work and when to use them.
-What Are Decorators? A decorator is a function that takes another function as input and extends its behavior without explicitly modifying it. They&amp;rsquo;re commonly used for:
-Logging Authentication/authorization Caching/memoization Rate limiting Input validation Basic Decorator Example Here&amp;rsquo;s a simple decorator that logs function calls:</description></item><item><title>Welcome to My Tech Blog</title><link>/blog/2025/11/welcome-to-my-tech-blog/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/welcome-to-my-tech-blog/</guid><description>Welcome to my new tech blog! This is the first post in what I hope will be a long series of articles about software development, tutorials, and technical insights.
-Why Another Tech Blog? The internet is full of tech blogs, so why create another one? A few reasons:
-Personal learning - Writing about technical topics helps solidify understanding Sharing knowledge - If I struggled with something, others might too Building a portfolio - Demonstrating expertise through writing Community contribution - Giving back to the developer community What to Expect I plan to write about:</description></item><item><title>About</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>About This Blog This is a minimalist tech blog where I explore software development, share tutorials, review tools, and dive deep into technical topics that interest me.
-The Stack This blog is built with:
-Hugo - A fast static site generator Hugo XMin - An extremely minimal theme (~140 lines of code) Decap CMS - For content management Syntax highlighting powered by Chroma The focus is on simplicity, speed, and content.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to Tech Blog on Tech Blog</title><link>/</link><description>Recent content in Welcome to Tech Blog on Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo vs Other Static Site Generators: Why I Chose Hugo</title><link>/blog/2025/11/hugo-vs-other-static-site-generators-why-i-chose-hugo/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/hugo-vs-other-static-site-generators-why-i-chose-hugo/</guid><description>&lt;p&gt;When building this blog, I evaluated several static site generators. Here&amp;rsquo;s why I ultimately chose Hugo.&lt;/p&gt;
+&lt;h2 id="the-contenders"&gt;The Contenders&lt;/h2&gt;
+&lt;p&gt;I considered these popular options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt; - Go-based SSG&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jekyll&lt;/strong&gt; - Ruby-based, GitHub Pages default&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Next.js&lt;/strong&gt; - React-based framework with SSG support&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gatsby&lt;/strong&gt; - React-based SSG focused on GraphQL&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="comparison-matrix"&gt;Comparison Matrix&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Feature&lt;/th&gt;
+ &lt;th&gt;Hugo&lt;/th&gt;
+ &lt;th&gt;Jekyll&lt;/th&gt;
+ &lt;th&gt;Next.js&lt;/th&gt;
+ &lt;th&gt;Gatsby&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Build Speed&lt;/td&gt;
+ &lt;td&gt;⚡ Fastest&lt;/td&gt;
+ &lt;td&gt;Slow&lt;/td&gt;
+ &lt;td&gt;Medium&lt;/td&gt;
+ &lt;td&gt;Slow&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Learning Curve&lt;/td&gt;
+ &lt;td&gt;Low&lt;/td&gt;
+ &lt;td&gt;Low&lt;/td&gt;
+ &lt;td&gt;Medium&lt;/td&gt;
+ &lt;td&gt;High&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Plugins&lt;/td&gt;
+ &lt;td&gt;Limited&lt;/td&gt;
+ &lt;td&gt;Many&lt;/td&gt;
+ &lt;td&gt;Many&lt;/td&gt;
+ &lt;td&gt;Many&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Tech Stack&lt;/td&gt;
+ &lt;td&gt;Go&lt;/td&gt;
+ &lt;td&gt;Ruby&lt;/td&gt;
+ &lt;td&gt;React&lt;/td&gt;
+ &lt;td&gt;React&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Bundle Size&lt;/td&gt;
+ &lt;td&gt;Minimal&lt;/td&gt;
+ &lt;td&gt;Minimal&lt;/td&gt;
+ &lt;td&gt;Large&lt;/td&gt;
+ &lt;td&gt;Large&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="why-hugo-won"&gt;Why Hugo Won&lt;/h2&gt;
+&lt;h3 id="1-speed"&gt;1. Speed&lt;/h3&gt;
+&lt;p&gt;Hugo is &lt;strong&gt;ridiculously fast&lt;/strong&gt;. Building thousands of pages takes seconds, not minutes:&lt;/p&gt;</description></item><item><title>Understanding Python Decorators: A Practical Guide</title><link>/blog/2025/11/understanding-python-decorators-a-practical-guide/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/understanding-python-decorators-a-practical-guide/</guid><description>&lt;p&gt;Python decorators are a powerful feature that allows you to modify or enhance functions and methods. Let&amp;rsquo;s dive into how they work and when to use them.&lt;/p&gt;
+&lt;h2 id="what-are-decorators"&gt;What Are Decorators?&lt;/h2&gt;
+&lt;p&gt;A decorator is a function that takes another function as input and extends its behavior without explicitly modifying it. They&amp;rsquo;re commonly used for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Logging&lt;/li&gt;
+&lt;li&gt;Authentication/authorization&lt;/li&gt;
+&lt;li&gt;Caching/memoization&lt;/li&gt;
+&lt;li&gt;Rate limiting&lt;/li&gt;
+&lt;li&gt;Input validation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="basic-decorator-example"&gt;Basic Decorator Example&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a simple decorator that logs function calls:&lt;/p&gt;</description></item><item><title>Welcome to My Tech Blog</title><link>/blog/2025/11/welcome-to-my-tech-blog/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/welcome-to-my-tech-blog/</guid><description>&lt;p&gt;Welcome to my new tech blog! This is the first post in what I hope will be a long series of articles about software development, tutorials, and technical insights.&lt;/p&gt;
+&lt;h2 id="why-another-tech-blog"&gt;Why Another Tech Blog?&lt;/h2&gt;
+&lt;p&gt;The internet is full of tech blogs, so why create another one? A few reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Personal learning&lt;/strong&gt; - Writing about technical topics helps solidify understanding&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sharing knowledge&lt;/strong&gt; - If I struggled with something, others might too&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Building a portfolio&lt;/strong&gt; - Demonstrating expertise through writing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Community contribution&lt;/strong&gt; - Giving back to the developer community&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="what-to-expect"&gt;What to Expect&lt;/h2&gt;
+&lt;p&gt;I plan to write about:&lt;/p&gt;</description></item><item><title>About</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;h2 id="about-this-blog"&gt;About This Blog&lt;/h2&gt;
+&lt;p&gt;This is a minimalist tech blog where I explore software development, share tutorials, review tools, and dive deep into technical topics that interest me.&lt;/p&gt;
+&lt;h2 id="the-stack"&gt;The Stack&lt;/h2&gt;
+&lt;p&gt;This blog is built with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://gohugo.io"&gt;Hugo&lt;/a&gt;&lt;/strong&gt; - A fast static site generator&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/yihui/hugo-xmin"&gt;Hugo XMin&lt;/a&gt;&lt;/strong&gt; - An extremely minimal theme (~140 lines of code)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://decapcms.org"&gt;Decap CMS&lt;/a&gt;&lt;/strong&gt; - For content management&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Syntax highlighting&lt;/strong&gt; powered by Chroma&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The focus is on simplicity, speed, and content. No JavaScript frameworks, no bloat—just clean HTML, minimal CSS, and well-formatted content.&lt;/p&gt;</description></item></channel></rss>
