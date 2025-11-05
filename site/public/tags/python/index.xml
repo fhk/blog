@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Tech Blog</title><link>/tags/python/</link><description>Recent content in python on Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Understanding Python Decorators: A Practical Guide</title><link>/blog/2025/11/understanding-python-decorators-a-practical-guide/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>/blog/2025/11/understanding-python-decorators-a-practical-guide/</guid><description>Python decorators are a powerful feature that allows you to modify or enhance functions and methods. Let&amp;rsquo;s dive into how they work and when to use them.
-What Are Decorators? A decorator is a function that takes another function as input and extends its behavior without explicitly modifying it. They&amp;rsquo;re commonly used for:
-Logging Authentication/authorization Caching/memoization Rate limiting Input validation Basic Decorator Example Here&amp;rsquo;s a simple decorator that logs function calls:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Tech Blog</title><link>http://localhost:1313/tags/python/</link><description>Recent content in Python on Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Understanding Python Decorators: A Practical Guide</title><link>http://localhost:1313/blog/2025/11/understanding-python-decorators-a-practical-guide/</link><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/2025/11/understanding-python-decorators-a-practical-guide/</guid><description>&lt;p&gt;Python decorators are a powerful feature that allows you to modify or enhance functions and methods. Let&amp;rsquo;s dive into how they work and when to use them.&lt;/p&gt;
+&lt;h2 id="what-are-decorators"&gt;What Are Decorators?&lt;/h2&gt;
+&lt;p&gt;A decorator is a function that takes another function as input and extends its behavior without explicitly modifying it. They&amp;rsquo;re commonly used for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Logging&lt;/li&gt;
+&lt;li&gt;Authentication/authorization&lt;/li&gt;
+&lt;li&gt;Caching/memoization&lt;/li&gt;
+&lt;li&gt;Rate limiting&lt;/li&gt;
+&lt;li&gt;Input validation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="basic-decorator-example"&gt;Basic Decorator Example&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a simple decorator that logs function calls:&lt;/p&gt;</description></item></channel></rss>
