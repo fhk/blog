@@ -11,7 +11,7 @@ tags:
   - gemini
   - google
 ---
-Over the last few years there's been alot of examples of using Large Language Models (LLMs) for pulling web pages and then converting them to structured data. Usually with some mix of Python, requests, beautiful soup and then scrapy. More recently the use of AI and even image processing has taken strides. The state of the art in 2024 was to use JinaAI et al, so much so that the first comment on the youtube video is “Dammit stop telling everybody about Jina “!!! \ [source](https://www.youtube.com/watch?v=QxHE4af5BQE)
+Over the last few years there's been alot of examples of using Large Language Models (LLMs) for pulling web pages and then converting them to structured data. Usually with some mix of Python, requests, beautiful soup and then scrapy. More recently the use of AI and even image processing has taken strides. The state of the art in 2024 was to use JinaAI et al, so much so that the first comment on the youtube video is “Dammit stop telling everybody about Jina “!!! [source](https://www.youtube.com/watch?v=QxHE4af5BQE)
 
 
 
