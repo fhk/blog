@@ -116,11 +116,11 @@ Hello!
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>CountCalls</span>:
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> __init__(self, func):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>__init__</span>(self, func):
 </span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>func <span style=color:#f92672>=</span> func
 </span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> __call__(self, <span style=color:#f92672>*</span>args, <span style=color:#f92672>**</span>kwargs):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>__call__</span>(self, <span style=color:#f92672>*</span>args, <span style=color:#f92672>**</span>kwargs):
 </span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
 </span></span><span style=display:flex><span>        print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Call </span><span style=color:#e6db74>{</span>self<span style=color:#f92672>.</span>count<span style=color:#e6db74>}</span><span style=color:#e6db74> to </span><span style=color:#e6db74>{</span>self<span style=color:#f92672>.</span>func<span style=color:#f92672>.</span>__name__<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
 </span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>func(<span style=color:#f92672>*</span>args, <span style=color:#f92672>**</span>kwargs)
