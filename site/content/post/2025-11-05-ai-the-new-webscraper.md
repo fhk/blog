@@ -23,7 +23,7 @@ Then, biggest problem here is that you need to know where to start and what you 
 
 What if there was a way to use natural language to find and parse 1000s of urls both dead and alive and then return structured data?
 
-\## AI research and Search Tools
+## AI research and Search Tools
 
 In his recent post Simon Willison goes through how to use the OpenAI research model [ref](https://til.simonwillison.net/llms/o4-mini-deep-research), and I’ve also played with Claude research, one thing to note is that you can parse 500+ web urls, but it’s hard to specify which ones get selected and crawled into model context. Enter Gemini and the Google gen ai sdk [ref](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Search_Grounding.ipynb), this lets you use the Grounding capability to launch searches.
 
